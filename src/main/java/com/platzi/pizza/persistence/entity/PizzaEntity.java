@@ -1,7 +1,7 @@
 package com.platzi.pizza.persistence.entity;
 
-import com.platzi.pizza.persistence.entity.audit.AuditPizzaListener;
-import com.platzi.pizza.persistence.entity.audit.AuditableEntity;
+import com.platzi.pizza.persistence.audit.AuditPizzaListener;
+import com.platzi.pizza.persistence.audit.AuditableEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
