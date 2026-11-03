@@ -24,6 +24,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/api/pizzas/**").hasAnyRole("ADMIN", "CUSTOMER")
                         .requestMatchers(HttpMethod.POST, "/api/pizzas/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/api/pizzas/**").hasRole("ADMIN")
+                        .requestMatchers("/api/orders/random").hasAuthority("RANDOM_ORDER")
                         .requestMatchers("/api/orders/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT).denyAll()
                         .anyRequest()
